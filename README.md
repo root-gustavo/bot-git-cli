@@ -38,3 +38,15 @@ lena <mensagem> --<comando>
 
 - Lena permitirá configurar prefixos de commit e branch, como feat/, fix/, chore/, garantindo consistência no padrão do projeto.
 - Essa funcionalidade funciona de forma similar a ferramentas que obrigam o uso de prefixos, mas integrada diretamente na IA, mantendo a flexibilidade e automação.
+
+## Memória da IA
+
+* Lena mantém **memória separada em três arquivos JSON**:
+
+  * `memory_commits.json` > histórico de commits aprovados
+  * `memory_branches.json` > histórico de nomes de branch aprovados
+  * `memory_prs.json` > histórico de títulos e descrições de PR aprovados
+  
+* Cada comando carrega **apenas a memória relevante**, garantindo rapidez e eficiência.
+* Essa separação permite que Lena **aprenda de forma incremental**, mesmo em projetos com muitos commits, gerando sugestões mais precisas e consistentes.
+* Mantém os arquivos leves e organizados, facilitando manutenção e futuras melhorias.
