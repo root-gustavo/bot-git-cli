@@ -14,6 +14,7 @@ lena <mensagem> --<comando>
 
 ## Funcionamento Inicial:
 
+* Escrita da IA completamente em inglês
 * Quando ela gerar um nome de branch, vai perguntar se você está satisfeito: `(Y) ou (N)`
 
   * Se não estiver satisfeito, ela irá refazer a sugestão até gerar uma boa opção
@@ -23,6 +24,9 @@ lena <mensagem> --<comando>
   * Vai detectar em qual branch você está e analisar o nome da branch
   * Vai também verificar todos os commits do branch para aumentar a precisão da sugestão
 
+## Modelo da IA
+
+* `MPT-7B-Instruct` - (light version)
 ## O que ela será?
 
 * Um arquivo `.exe` gerado com `PyInstaller`
